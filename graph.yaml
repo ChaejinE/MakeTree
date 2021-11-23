@@ -1,0 +1,128 @@
+---
+dataset_name: AIHub
+layer_num: 2
+
+root:
+  prev: None
+  name: root
+  info:
+    object:
+      parent: None
+      child: [dynamic, static]
+      
+  next: layer_1
+
+# Layer 1
+layer_1:
+  prev: root
+  name: layer_1
+  info:
+    dynamic:
+      parent: Object
+      child: [barricade, bicycle, bus, car, carrier, cat, dog, motorcycle, movable_signage,
+            person, scooter, stroller, truck, wheelchair]
+
+    static:
+      parent: Object
+      child: [bench, bollard, chair, fire_hydrant, kiosk, parking_meter, pole, power_controller,
+              potted_plant, stop, table, traffic_light_controller, traffic_light, traffic_sign, tree_trunk]
+
+  next: layer_2
+
+# Layer 2
+layer_2: 
+  prev: layer_1
+  name: layer_2
+  info: 
+    barricade:
+      parent: dynamic
+      child: None
+    bicycle:
+      parent: dynamic
+      child: None
+    bus:
+      parent: dynamic
+      child: None
+    car:
+      parent: dynamic
+      child: None
+    carrier:
+      parent: dynamic
+      child: None
+    cat:
+      parent: dynamic
+      child: None
+    dog:
+      parent: dynamic
+      child: None
+    motorcycle:
+      parent: dynamic
+      child: None
+    movable_signage:
+      parent: dynamic
+      child: None
+    person:
+      parent: dynamic
+      child: None
+    scooter:
+      parent: dynamic
+      child: None
+    stroller:
+      parent: dynamic
+      child: None
+    truck:
+      parent: dynamic
+      child: None
+    wheelchair:
+      parent: dynamic
+      child: None
+    bench:
+      parent: static
+      child: None
+    bollard:
+      parent: static
+      child: None
+    chair:
+      parent: static
+      child: None
+    fire_hydrant:
+      parent: static
+      child: None
+    kiosk:
+      parent: static
+      child: None
+    parking_meter:
+      parent: static
+      child: None
+    pole:
+      parent: static
+      child: None
+    power_controller:
+      parent: static
+      child: None
+    potted_plant:
+      parent: static
+      child: None
+    stop:
+      parent: static
+      child: None
+    table:
+      parent: static
+      child: None
+    traffic_light_controller:
+      parent: static
+      child: None
+    traffic_light:
+      parent: static
+      child: None
+    traffic_sign:
+      parent: static
+      child: None
+    tree_trunk:
+      parent: static
+      child: None
+
+  next: None
+
+
+...
