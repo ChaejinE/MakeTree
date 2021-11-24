@@ -1,0 +1,38 @@
+dataset_name: ApolloScape
+save_path: /home/chaejin/Desktop/cjlotto/git_clone/personal/MakeTree/datasets
+save_format: png
+view: true
+layer_num: 1
+root:
+  prev: null
+  name: root
+  next: layer_1
+  info:
+    object:
+      parent: null
+      child:
+      - small_vehicles
+      - big_vehicles
+      - pedestrian
+      - motorcyclist_bicyclist
+      - others
+layer_1:
+  prev: root
+  name: layer_1
+  next: null
+  info:
+    small_vehicles:
+      parent: object
+      child: null
+    big_vehicles:
+      parent: object
+      child: null
+    pedestrian:
+      parent: object
+      child: null
+    motorcyclist_bicyclist:
+      parent: object
+      child: null
+    others:
+      parent: object
+      child: null

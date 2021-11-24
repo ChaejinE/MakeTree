@@ -1,0 +1,83 @@
+# 리스트의 인덱스는 이전 레이어의 같은 인덱스의 child이다.
+# root 제외
+dataset_name: Mapillary
+output_path: /home/chaejin/Desktop/cjlotto/git_clone/personal/MakeTree/Outupt
+save_path: /home/chaejin/Desktop/cjlotto/git_clone/personal/MakeTree/datasets
+save_format: png
+view: True
+
+0: 
+  0:
+    - object
+
+1: 
+  0:
+    - Object
+    - human
+    - animal
+
+2:
+  0:
+    - support
+    - individual
+    - vehicle
+    - traffic_sign
+  
+  1:
+    - bin1
+    - rider
+
+  2:
+    - bin2
+
+3:
+  0:
+    - pole
+    - utility-pole
+    - traffic-sign-frame
+  
+  1:
+    - street-light
+    - billboard
+    - traffic-light
+    - manhole
+    - banner
+    - trash-can
+    - catch-basin
+    - junction-box
+    - cctv-camera
+    - fire-hydrant
+    - bench
+    - bike-rack
+    - mailbox
+    - pothole
+    - phone-booth
+    
+  2:
+    - car
+    - truck
+    - bicycle
+    - motorcycle
+    - bus
+    - other-vehicle
+    - wheeled-slow
+    - boat
+    - on-rails
+    - trailer
+    - caravan
+
+  3:
+    - front
+    - back
+
+  4:
+    - person
+
+  5:
+    - motorcyclist
+    - bicyclist
+    - other-rider
+
+  6:
+    - bird
+    - ground-animal

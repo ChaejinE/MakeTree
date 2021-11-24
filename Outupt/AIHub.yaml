@@ -2,6 +2,10 @@
 dataset_name: AIHub
 layer_num: 2
 
+save_path: /home/chaejin/Desktop/cjlotto/git_clone/personal/MakeTree
+save_format: png
+view: True
+
 root:
   prev: None
   name: root

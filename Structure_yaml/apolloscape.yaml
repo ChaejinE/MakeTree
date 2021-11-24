@@ -1,0 +1,19 @@
+# 리스트의 인덱스는 이전 레이어의 같은 인덱스의 child이다.
+# root 제외
+dataset_name: ApolloScape
+output_path: /home/chaejin/Desktop/cjlotto/git_clone/personal/MakeTree/Outupt
+save_path: /home/chaejin/Desktop/cjlotto/git_clone/personal/MakeTree/datasets
+save_format: png
+view: True
+
+0: 
+  0:
+    - object
+
+1:
+  0:
+    - small_vehicles
+    - big_vehicles
+    - pedestrian
+    - motorcyclist_bicyclist
+    - others

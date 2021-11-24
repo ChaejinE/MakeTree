@@ -1,0 +1,99 @@
+---
+dataset_name: CityScape
+layer_num: 2
+
+save_path: /home/chaejin/Desktop/cjlotto/git_clone/personal/MakeTree
+save_format: png
+view: True
+
+root:
+  prev: None
+  name: root
+  info:
+    object:
+      parent: None
+      child: [human, vehicle, nature, void]
+      
+  next: layer_1
+
+# Layer 1
+layer_1:
+  prev: root
+  name: layer_1
+  info:
+    human:
+      parent: Object
+      child: [person, rider]
+
+    vehicle:
+      parent: Object
+      child: [car, truck, bus, on_rails, motorcycle, bicycle, caravan, trailer]
+    
+    nature:
+      parent: Object
+      child: [pole, pole_group, traffic_sign, traffic_light]
+    
+    void:
+      parent: Object
+      child: [static, dynamic]
+
+  next: layer_2
+
+layer_2:
+    prev: layer_1
+    name: layer_2
+    info:
+        pereson:
+          parent: human
+          child: None
+        rider:
+          parent: human
+          child: None
+        
+        car:
+          parent: vehicle
+          child: None
+        truck:
+          parent: vehicle
+          child: None
+        bus:
+          parent: vehicle
+          child: None
+        on_rails:
+          parent: vehicle
+          child: None
+        motorcycle:
+          parent: vehicle
+          child: None
+        bicycle:
+          parent: vehicle
+          child: None 
+        caravan:
+          parent: vehicle
+          child: None
+        trailer:
+          parent: vehicle
+          child: None
+
+        pole:
+          parent: nature
+          child: None
+        pole_group:
+          parent: nature
+          child: None
+        traffic_sign:
+          parent: nature
+          child: None
+        traffic_light:
+          parent: nature
+          child: None
+        
+        static:
+          parent: void
+          child: None
+        dynamic:
+          parent: void
+          child: None
+    
+    next: None
+...

@@ -1,0 +1,47 @@
+digraph CityScape {
+	root_object [label=object]
+	layer_1_human [label=human]
+	root_object -> layer_1_human
+	layer_1_vehicle [label=vehicle]
+	root_object -> layer_1_vehicle
+	layer_1_nature [label=nature]
+	root_object -> layer_1_nature
+	layer_1_void [label=void]
+	root_object -> layer_1_void
+	layer_1_human [label=human]
+	layer_2_person [label=person]
+	layer_1_human -> layer_2_person
+	layer_2_rider [label=rider]
+	layer_1_human -> layer_2_rider
+	layer_1_vehicle [label=vehicle]
+	layer_2_car [label=car]
+	layer_1_vehicle -> layer_2_car
+	layer_2_truck [label=truck]
+	layer_1_vehicle -> layer_2_truck
+	layer_2_bus [label=bus]
+	layer_1_vehicle -> layer_2_bus
+	layer_2_on_rails [label=on_rails]
+	layer_1_vehicle -> layer_2_on_rails
+	layer_2_motorcycle [label=motorcycle]
+	layer_1_vehicle -> layer_2_motorcycle
+	layer_2_bicycle [label=bicycle]
+	layer_1_vehicle -> layer_2_bicycle
+	layer_2_caravan [label=caravan]
+	layer_1_vehicle -> layer_2_caravan
+	layer_2_trailer [label=trailer]
+	layer_1_vehicle -> layer_2_trailer
+	layer_1_nature [label=nature]
+	layer_2_pole [label=pole]
+	layer_1_nature -> layer_2_pole
+	layer_2_pole_group [label=pole_group]
+	layer_1_nature -> layer_2_pole_group
+	layer_2_traffic_sign [label=traffic_sign]
+	layer_1_nature -> layer_2_traffic_sign
+	layer_2_traffic_light [label=traffic_light]
+	layer_1_nature -> layer_2_traffic_light
+	layer_1_void [label=void]
+	layer_2_static [label=static]
+	layer_1_void -> layer_2_static
+	layer_2_dynamic [label=dynamic]
+	layer_1_void -> layer_2_dynamic
+}

@@ -1,0 +1,107 @@
+digraph Mapillary {
+	root_object [label=object]
+	layer_1_Object [label=Object]
+	root_object -> layer_1_Object
+	layer_1_human [label=human]
+	root_object -> layer_1_human
+	layer_1_animal [label=animal]
+	root_object -> layer_1_animal
+	layer_1_Object [label=Object]
+	layer_2_support [label=support]
+	layer_1_Object -> layer_2_support
+	layer_2_individual [label=individual]
+	layer_1_Object -> layer_2_individual
+	layer_2_vehicle [label=vehicle]
+	layer_1_Object -> layer_2_vehicle
+	layer_2_traffic_sign [label=traffic_sign]
+	layer_1_Object -> layer_2_traffic_sign
+	layer_1_human [label=human]
+	layer_2_bin1 [label=bin1]
+	layer_1_human -> layer_2_bin1
+	layer_2_rider [label=rider]
+	layer_1_human -> layer_2_rider
+	layer_1_animal [label=animal]
+	layer_2_bin2 [label=bin2]
+	layer_1_animal -> layer_2_bin2
+	layer_2_support [label=support]
+	layer_3_pole [label=pole]
+	layer_2_support -> layer_3_pole
+	"layer_3_utility-pole" [label="utility-pole"]
+	layer_2_support -> "layer_3_utility-pole"
+	"layer_3_traffic-sign-frame" [label="traffic-sign-frame"]
+	layer_2_support -> "layer_3_traffic-sign-frame"
+	layer_2_individual [label=individual]
+	"layer_3_street-light" [label="street-light"]
+	layer_2_individual -> "layer_3_street-light"
+	layer_3_billboard [label=billboard]
+	layer_2_individual -> layer_3_billboard
+	"layer_3_traffic-light" [label="traffic-light"]
+	layer_2_individual -> "layer_3_traffic-light"
+	layer_3_manhole [label=manhole]
+	layer_2_individual -> layer_3_manhole
+	layer_3_banner [label=banner]
+	layer_2_individual -> layer_3_banner
+	"layer_3_trash-can" [label="trash-can"]
+	layer_2_individual -> "layer_3_trash-can"
+	"layer_3_catch-basin" [label="catch-basin"]
+	layer_2_individual -> "layer_3_catch-basin"
+	"layer_3_junction-box" [label="junction-box"]
+	layer_2_individual -> "layer_3_junction-box"
+	"layer_3_cctv-camera" [label="cctv-camera"]
+	layer_2_individual -> "layer_3_cctv-camera"
+	"layer_3_fire-hydrant" [label="fire-hydrant"]
+	layer_2_individual -> "layer_3_fire-hydrant"
+	layer_3_bench [label=bench]
+	layer_2_individual -> layer_3_bench
+	"layer_3_bike-rack" [label="bike-rack"]
+	layer_2_individual -> "layer_3_bike-rack"
+	layer_3_mailbox [label=mailbox]
+	layer_2_individual -> layer_3_mailbox
+	layer_3_pothole [label=pothole]
+	layer_2_individual -> layer_3_pothole
+	"layer_3_phone-booth" [label="phone-booth"]
+	layer_2_individual -> "layer_3_phone-booth"
+	layer_2_vehicle [label=vehicle]
+	layer_3_car [label=car]
+	layer_2_vehicle -> layer_3_car
+	layer_3_truck [label=truck]
+	layer_2_vehicle -> layer_3_truck
+	layer_3_bicycle [label=bicycle]
+	layer_2_vehicle -> layer_3_bicycle
+	layer_3_motorcycle [label=motorcycle]
+	layer_2_vehicle -> layer_3_motorcycle
+	layer_3_bus [label=bus]
+	layer_2_vehicle -> layer_3_bus
+	"layer_3_other-vehicle" [label="other-vehicle"]
+	layer_2_vehicle -> "layer_3_other-vehicle"
+	"layer_3_wheeled-slow" [label="wheeled-slow"]
+	layer_2_vehicle -> "layer_3_wheeled-slow"
+	layer_3_boat [label=boat]
+	layer_2_vehicle -> layer_3_boat
+	"layer_3_on-rails" [label="on-rails"]
+	layer_2_vehicle -> "layer_3_on-rails"
+	layer_3_trailer [label=trailer]
+	layer_2_vehicle -> layer_3_trailer
+	layer_3_caravan [label=caravan]
+	layer_2_vehicle -> layer_3_caravan
+	layer_2_traffic_sign [label=traffic_sign]
+	layer_3_front [label=front]
+	layer_2_traffic_sign -> layer_3_front
+	layer_3_back [label=back]
+	layer_2_traffic_sign -> layer_3_back
+	layer_2_bin1 [label=bin1]
+	layer_3_person [label=person]
+	layer_2_bin1 -> layer_3_person
+	layer_2_rider [label=rider]
+	layer_3_motorcyclist [label=motorcyclist]
+	layer_2_rider -> layer_3_motorcyclist
+	layer_3_bicyclist [label=bicyclist]
+	layer_2_rider -> layer_3_bicyclist
+	"layer_3_other-rider" [label="other-rider"]
+	layer_2_rider -> "layer_3_other-rider"
+	layer_2_bin2 [label=bin2]
+	layer_3_bird [label=bird]
+	layer_2_bin2 -> layer_3_bird
+	"layer_3_ground-animal" [label="ground-animal"]
+	layer_2_bin2 -> "layer_3_ground-animal"
+}

@@ -1,0 +1,51 @@
+root:
+  prev: null
+  name: root
+  next: layer_1
+  object:
+    parent: null
+    child:
+    - dynamic
+    - static
+layer_1:
+  prev: root
+  name: layer_1
+  next: layer_2
+  dynamic:
+    parent: object
+    child:
+    - bus
+    - car
+  static:
+    parent: object
+    child:
+    - bench
+    - chair
+layer_2:
+  prev: layer_1
+  name: layer_2
+  next: layer_3
+  bus:
+    parent: dynamic
+    child:
+    - lotto
+  car:
+    parent: dynamic
+    child:
+    - cj
+  bench:
+    parent: static
+    child: null
+  chair:
+    parent: static
+    child: null
+layer_3:
+  prev: layer_2
+  name: layer_3
+  next: null
+  lotto:
+    parent: bus
+    child: null
+  cj:
+    parent: car
+    child: null

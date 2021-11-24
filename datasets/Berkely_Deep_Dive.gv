@@ -1,0 +1,23 @@
+digraph Berkely_Deep_Dive {
+	root_object [label=object]
+	layer_1_pedestrian [label=pedestrian]
+	root_object -> layer_1_pedestrian
+	layer_1_rider [label=rider]
+	root_object -> layer_1_rider
+	layer_1_car [label=car]
+	root_object -> layer_1_car
+	layer_1_truck [label=truck]
+	root_object -> layer_1_truck
+	layer_1_bus [label=bus]
+	root_object -> layer_1_bus
+	layer_1_train [label=train]
+	root_object -> layer_1_train
+	layer_1_motorcycle [label=motorcycle]
+	root_object -> layer_1_motorcycle
+	layer_1_bicycle [label=bicycle]
+	root_object -> layer_1_bicycle
+	layer_1_traffic_light [label=traffic_light]
+	root_object -> layer_1_traffic_light
+	layer_1_traffic_sign [label=traffic_sign]
+	root_object -> layer_1_traffic_sign
+}

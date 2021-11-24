@@ -1,0 +1,216 @@
+dataset_name: Mapillary
+save_path: /home/chaejin/Desktop/cjlotto/git_clone/personal/MakeTree/datasets
+save_format: png
+view: true
+layer_num: 3
+root:
+  prev: null
+  name: root
+  next: layer_1
+  info:
+    object:
+      parent: null
+      child:
+      - Object
+      - human
+      - animal
+layer_1:
+  prev: root
+  name: layer_1
+  next: layer_2
+  info:
+    Object:
+      parent: object
+      child:
+      - support
+      - individual
+      - vehicle
+      - traffic_sign
+    human:
+      parent: object
+      child:
+      - bin1
+      - rider
+    animal:
+      parent: object
+      child:
+      - bin2
+layer_2:
+  prev: layer_1
+  name: layer_2
+  next: layer_3
+  info:
+    support:
+      parent: Object
+      child:
+      - pole
+      - utility-pole
+      - traffic-sign-frame
+    individual:
+      parent: Object
+      child:
+      - street-light
+      - billboard
+      - traffic-light
+      - manhole
+      - banner
+      - trash-can
+      - catch-basin
+      - junction-box
+      - cctv-camera
+      - fire-hydrant
+      - bench
+      - bike-rack
+      - mailbox
+      - pothole
+      - phone-booth
+    vehicle:
+      parent: Object
+      child:
+      - car
+      - truck
+      - bicycle
+      - motorcycle
+      - bus
+      - other-vehicle
+      - wheeled-slow
+      - boat
+      - on-rails
+      - trailer
+      - caravan
+    traffic_sign:
+      parent: Object
+      child:
+      - front
+      - back
+    bin1:
+      parent: human
+      child:
+      - person
+    rider:
+      parent: human
+      child:
+      - motorcyclist
+      - bicyclist
+      - other-rider
+    bin2:
+      parent: animal
+      child:
+      - bird
+      - ground-animal
+layer_3:
+  prev: layer_2
+  name: layer_3
+  next: null
+  info:
+    pole:
+      parent: support
+      child: null
+    utility-pole:
+      parent: support
+      child: null
+    traffic-sign-frame:
+      parent: support
+      child: null
+    street-light:
+      parent: individual
+      child: null
+    billboard:
+      parent: individual
+      child: null
+    traffic-light:
+      parent: individual
+      child: null
+    manhole:
+      parent: individual
+      child: null
+    banner:
+      parent: individual
+      child: null
+    trash-can:
+      parent: individual
+      child: null
+    catch-basin:
+      parent: individual
+      child: null
+    junction-box:
+      parent: individual
+      child: null
+    cctv-camera:
+      parent: individual
+      child: null
+    fire-hydrant:
+      parent: individual
+      child: null
+    bench:
+      parent: individual
+      child: null
+    bike-rack:
+      parent: individual
+      child: null
+    mailbox:
+      parent: individual
+      child: null
+    pothole:
+      parent: individual
+      child: null
+    phone-booth:
+      parent: individual
+      child: null
+    car:
+      parent: vehicle
+      child: null
+    truck:
+      parent: vehicle
+      child: null
+    bicycle:
+      parent: vehicle
+      child: null
+    motorcycle:
+      parent: vehicle
+      child: null
+    bus:
+      parent: vehicle
+      child: null
+    other-vehicle:
+      parent: vehicle
+      child: null
+    wheeled-slow:
+      parent: vehicle
+      child: null
+    boat:
+      parent: vehicle
+      child: null
+    on-rails:
+      parent: vehicle
+      child: null
+    trailer:
+      parent: vehicle
+      child: null
+    caravan:
+      parent: vehicle
+      child: null
+    front:
+      parent: traffic_sign
+      child: null
+    back:
+      parent: traffic_sign
+      child: null
+    person:
+      parent: bin1
+      child: null
+    motorcyclist:
+      parent: rider
+      child: null
+    bicyclist:
+      parent: rider
+      child: null
+    other-rider:
+      parent: rider
+      child: null
+    bird:
+      parent: bin2
+      child: null
+    ground-animal:
+      parent: bin2
+      child: null

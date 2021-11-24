@@ -1,0 +1,58 @@
+dataset_name: Berkely_Deep_Dive
+save_path: /home/chaejin/Desktop/cjlotto/git_clone/personal/MakeTree/datasets
+save_format: png
+view: true
+layer_num: 1
+root:
+  prev: null
+  name: root
+  next: layer_1
+  info:
+    object:
+      parent: null
+      child:
+      - pedestrian
+      - rider
+      - car
+      - truck
+      - bus
+      - train
+      - motorcycle
+      - bicycle
+      - traffic_light
+      - traffic_sign
+layer_1:
+  prev: root
+  name: layer_1
+  next: null
+  info:
+    pedestrian:
+      parent: object
+      child: null
+    rider:
+      parent: object
+      child: null
+    car:
+      parent: object
+      child: null
+    truck:
+      parent: object
+      child: null
+    bus:
+      parent: object
+      child: null
+    train:
+      parent: object
+      child: null
+    motorcycle:
+      parent: object
+      child: null
+    bicycle:
+      parent: object
+      child: null
+    traffic_light:
+      parent: object
+      child: null
+    traffic_sign:
+      parent: object
+      child: null
